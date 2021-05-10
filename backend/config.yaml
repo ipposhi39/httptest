@@ -1,0 +1,19 @@
+# You can overwrite below by env environments.
+env:
+  name: "test"  # or "prd" or "test" # ENV:  WDC_ENV_NAME
+test:
+  http:
+    cors: "http://localtest.io"
+    port: 80
+  logger:
+    debug: false # Dump HTTP request, etc.
+    log_json: true
+  postgres:
+    dbname: "testdb"
+    host: "localhost"
+    pass: "test"
+    port: "5432"
+    sslmode: "disable"
+    user: "localtest"
+  firebase:
+    credential_key: "test"
